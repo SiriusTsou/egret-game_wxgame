@@ -633,6 +633,66 @@ generateEUI.paths['resource/eui_skins/ButtonSkin.exml'] = window.skins.ButtonSki
 		return t;
 	};
 	return VSliderSkin;
+})(eui.Skin);generateEUI.paths['resource/eui_skins/new/Button_01.exml'] = window.Button_01 = (function (_super) {
+	__extends(Button_01, _super);
+	function Button_01() {
+		_super.call(this);
+		this.skinParts = ["labelDisplay","iconDisplay"];
+		
+		this.minHeight = 50;
+		this.minWidth = 100;
+		this.elementsContent = [this._Image1_i(),this.labelDisplay_i(),this.iconDisplay_i()];
+		this.states = [
+			new eui.State ("up",
+				[
+				])
+			,
+			new eui.State ("down",
+				[
+					new eui.SetProperty("_Image1","source","tip-bg")
+				])
+			,
+			new eui.State ("disabled",
+				[
+					new eui.SetProperty("_Image1","alpha",0.5)
+				])
+		];
+	}
+	var _proto = Button_01.prototype;
+
+	_proto._Image1_i = function () {
+		var t = new eui.Image();
+		this._Image1 = t;
+		t.percentHeight = 100;
+		t.horizontalCenter = 0;
+		t.scale9Grid = new egret.Rectangle(31,39,585,64);
+		t.source = "tip-bg";
+		t.verticalCenter = 0;
+		t.percentWidth = 100;
+		return t;
+	};
+	_proto.labelDisplay_i = function () {
+		var t = new eui.Label();
+		this.labelDisplay = t;
+		t.bottom = 8;
+		t.fontFamily = "SimHei";
+		t.left = 8;
+		t.right = 8;
+		t.size = 20;
+		t.textAlign = "center";
+		t.textColor = 0xFFFFFF;
+		t.top = 8;
+		t.verticalAlign = "middle";
+		return t;
+	};
+	_proto.iconDisplay_i = function () {
+		var t = new eui.Image();
+		this.iconDisplay = t;
+		t.horizontalCenter = 0;
+		t.verticalCenter = 0;
+		return t;
+	};
+	return Button_01;
 })(eui.Skin);generateEUI.paths['resource/exml/jump/FrameSkin.exml'] = window.FrameSkin = (function (_super) {
 	__extends(FrameSkin, _super);
 	function FrameSkin() {
@@ -760,66 +820,6 @@ generateEUI.paths['resource/eui_skins/ButtonSkin.exml'] = window.skins.ButtonSki
 		return t;
 	};
 	return StoneSkin;
-})(eui.Skin);generateEUI.paths['resource/eui_skins/new/Button_01.exml'] = window.Button_01 = (function (_super) {
-	__extends(Button_01, _super);
-	function Button_01() {
-		_super.call(this);
-		this.skinParts = ["labelDisplay","iconDisplay"];
-		
-		this.minHeight = 50;
-		this.minWidth = 100;
-		this.elementsContent = [this._Image1_i(),this.labelDisplay_i(),this.iconDisplay_i()];
-		this.states = [
-			new eui.State ("up",
-				[
-				])
-			,
-			new eui.State ("down",
-				[
-					new eui.SetProperty("_Image1","source","tip-bg")
-				])
-			,
-			new eui.State ("disabled",
-				[
-					new eui.SetProperty("_Image1","alpha",0.5)
-				])
-		];
-	}
-	var _proto = Button_01.prototype;
-
-	_proto._Image1_i = function () {
-		var t = new eui.Image();
-		this._Image1 = t;
-		t.percentHeight = 100;
-		t.horizontalCenter = 0;
-		t.scale9Grid = new egret.Rectangle(31,39,585,64);
-		t.source = "tip-bg";
-		t.verticalCenter = 0;
-		t.percentWidth = 100;
-		return t;
-	};
-	_proto.labelDisplay_i = function () {
-		var t = new eui.Label();
-		this.labelDisplay = t;
-		t.bottom = 8;
-		t.fontFamily = "SimHei";
-		t.left = 8;
-		t.right = 8;
-		t.size = 20;
-		t.textAlign = "center";
-		t.textColor = 0xFFFFFF;
-		t.top = 8;
-		t.verticalAlign = "middle";
-		return t;
-	};
-	_proto.iconDisplay_i = function () {
-		var t = new eui.Image();
-		this.iconDisplay = t;
-		t.horizontalCenter = 0;
-		t.verticalCenter = 0;
-		return t;
-	};
-	return Button_01;
 })(eui.Skin);generateEUI.paths['resource/exml/main/MainSkin.exml'] = window.MainSkin = (function (_super) {
 	__extends(MainSkin, _super);
 	function MainSkin() {

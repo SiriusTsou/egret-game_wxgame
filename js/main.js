@@ -4703,10 +4703,10 @@ var DisplayUtils = (function () {
                 if (textFlow[index].length > 0) {
                     textFlow[index].push({ text: "\n" });
                 }
-                if (showName) {
-                    name = Lang.itemComAttrName1[idValues[i].type];
-                    textFlow[index].push({ text: "" + name + concatChar, style: nameStyle });
-                }
+                // if (showName) {
+                // 	name = Lang.itemComAttrName1[idValues[i].type];
+                // 	textFlow[index].push({ text: `${name}${concatChar}`, style: nameStyle });
+                // }
                 var value = "" + idValues[i].value;
                 if (focusValue != null) {
                     value = focusValue;
